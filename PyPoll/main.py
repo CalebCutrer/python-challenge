@@ -84,7 +84,7 @@ outputpy = os.path.join('analysis', 'ElectionResults') #Creating path to folder
 with open(outputpy, "w", newline = '') as textfile:
         writer = csv.writer(textfile)
 
-        print("\nElection Results: ", file= textfile)
+        print("Election Results: ", file= textfile)
         print("\n----------------------------------\n", file = textfile) 
         print(f"Total Votes: {Total_Votes}", file = textfile)
         print("\n----------------------------------\n", file = textfile)
