@@ -80,14 +80,14 @@ with open(output, "w", newline = '') as textfile:
         writer = csv.writer(textfile)
 
         print("\nFinancial Analysis", file = textfile)
-        print("\n--------------------------------------------\n", file = textfile)
+        print("\n--------------------------------------------\n", file = textfile) 
         print(f"Total Months: {TotalMonths}",file = textfile)
         print(f"\nTotal: ${round(NetTotalProfit)}", file = textfile) 
         print(f"\nAverage Change: ${round(AverageProfitChange, ndigits=2)}", file = textfile)
         print(f"\nGreatest Increase in Profits: {MonthIncrease} (${round(GreatestIncrease)})", file = textfile)
         print(f"\nGreatest Decrease in Profits: {MonthDecrease} (${round(GreatestDecrease)})\n", file = textfile)
         
-
+#Learned the print setting "file =" on stack overflow: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file 
 
 
 
