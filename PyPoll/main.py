@@ -68,6 +68,7 @@ with open(election_csv) as csvfile:
     for row in csv_reader:
         Candidates_Set.add(row[2])
 
+#create a break in the code to stop it from reassigning each time code is ran?
 #Assigning Candidates
     Candidates_List = list(Candidates_Set)
     Candidate1 = Candidates_List[0]
@@ -78,6 +79,9 @@ with open(election_csv) as csvfile:
     print(Candidate2)
     print(Candidate3)
 
+#
+#------------------------------------------------
+#
    
 # Creating output summary and writing it into a text file
 outputpy = os.path.join('analysis', 'ElectionResults') #Creating path to folder
