@@ -2,7 +2,6 @@ import os
 import csv
 
 # Creating variables:
-Total_Votes = 0
 Candidates_Set = set()
 Candidates_List = []
 Candidate1 = [] #Degette
@@ -10,13 +9,15 @@ Candidate2 = [] #Stockham
 Candidate3 = [] #Doane
 Winner = []
 
+Total_Votes = 0
+Total_Votes_Stockham = 0
+Total_Votes_DeGette = 0
+Total_Votes_Doane = 0
+
 Percentage_Votes_Stockham = 0
 Percentage_Votes_DeGette = 0
 Percentage_Votes_Doane = 0
 
-Total_Votes_Stockham = 0
-Total_Votes_DeGette = 0
-Total_Votes_Doane = 0
 
 # Create file path for data
 election_csv =os.path.join('Resources', 'election_data.csv')
@@ -57,7 +58,9 @@ with open(election_csv) as csvfile:
     #print(f"Percent votes DeGette: ", Percentage_Votes_DeGette)
     #print(f"Percent votes Doane: ", Percentage_Votes_Doane)
     #print(f"Percent votes Stockham: ", Percentage_Votes_Stockham)
-    
+#
+#----------------------------
+# 
 
 # Read in data, skip header row 
 with open(election_csv) as csvfile: 
