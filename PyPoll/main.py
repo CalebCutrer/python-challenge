@@ -51,12 +51,12 @@ with open(election_csv) as csvfile:
         else:
             Winner = "Charles Casper Stockham"
 
-    print(f"Total votes DeGette: ", Total_Votes_DeGette)
-    print(f"Total votes Doane: ", Total_Votes_Doane)
-    print(f"Total votes Stockham: ", Total_Votes_Stockham)
-    print(f"Percent votes DeGette: ", Percentage_Votes_DeGette)
-    print(f"Percent votes Doane: ", Percentage_Votes_Doane)
-    print(f"Percent votes Stockham: ", Percentage_Votes_Stockham)
+    #print(f"Total votes DeGette: ", Total_Votes_DeGette)
+    #print(f"Total votes Doane: ", Total_Votes_Doane)
+    #print(f"Total votes Stockham: ", Total_Votes_Stockham)
+    #print(f"Percent votes DeGette: ", Percentage_Votes_DeGette)
+    #print(f"Percent votes Doane: ", Percentage_Votes_Doane)
+    #print(f"Percent votes Stockham: ", Percentage_Votes_Stockham)
     
 
 # Read in data, skip header row 
@@ -92,7 +92,7 @@ with open(outputpy, "w", newline = '') as textfile:
         print(f"\nDiana DeGette: {round(Percentage_Votes_DeGette, ndigits =3)}% ({Total_Votes_DeGette})", file = textfile)
         print(f"\nRaymon Anthony Doane: {round(Percentage_Votes_Doane, ndigits =3)}% ({Total_Votes_Doane})", file = textfile)
         print("\n----------------------------------\n", file = textfile)
-        print(f"Winner: {Winner}", file= textfile)
+        print(f"Winner: {Winner}\n", file= textfile)
 
 
 
